@@ -1,0 +1,19 @@
+{
+    "name": "shardcachetool/shardcachetool",
+    "description": "si my desc",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "infobird",
+            "email": "wangfei@infobird.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload":{
+        "psr-4":{
+            "Infobird\\Tool\\":"src/Tool"
+        }
+    }
+}
