@@ -9,7 +9,7 @@
  *
  * 分库分表缓存相关
  */
-namespace Infobird/Tool;
+namespace Infobird\Tool;
 class CacheInfo
 {
     private $_instance_define_key;
@@ -21,7 +21,7 @@ class CacheInfo
     //组合方式存储redis
     private $_redis_obj;
 
-    public function __construct(Redis $redisobj, $info)
+    public function __construct(\Redis $redisobj, $info)
     {
 
         $this->_redis_obj = $redisobj;

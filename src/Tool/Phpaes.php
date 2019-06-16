@@ -20,7 +20,12 @@ class Phpaes
 	 * @param string $key
 	 */
 	protected $_secrect_key = '';
-	public function encrypt($plaintext,$key = null)
+	public function __construct($secretkey)
+    {
+        $this->_secrect_key=$secretkey;
+    }
+
+    public function encrypt($plaintext,$key = null)
 	{
 		$plaintext = trim($plaintext);
 		if ($plaintext == '') return '';

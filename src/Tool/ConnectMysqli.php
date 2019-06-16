@@ -1,42 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Administrator
- * Date: 2019/2/25/0025
- * Time: 18:50:53
- */
-
-//header('content-type:text/html;charset=gbk');
 /*
-掌握满足单例模式的必要条件
-(1)私有的构造方法-为了防止在类外使用new关键字实例化对象
-(2)私有的成员属性-为了防止在类外引入这个存放对象的属性
-(3)私有的克隆方法-为了防止在类外通过clone成生另一个对象
-(4)公有的静态方法-为了让用户进行实例化对象的操作
-*/
-//mysqli测试
-//$db=ConnectMysqli::getIntance();
-//var_dump($db);
-
-/*$sql="select * from acticle";
-$list=$db->getAll($sql);
-$db->p($list);*/
-
-/*$sql="select * from acticle where acticle_id=95";
-$list=$db->getRow($sql);
-$db->p($list);
-*/
-
-/*$sql="select title from acticle";
-$list=$db->getOne($sql);
-$db->p($list);不行*/
-
-//$list=$db->insert("users",$_POST);
-//$del=$db->deleteOne("users","id=29");
-//$del=$db->deleteAll("users","id in(27,28)");
-//$up=$db->update("users",$_POST,"id=27");
-//print_R($list);
-namespace Infobird/Tool;
+ * 来源 网络
+ */
+namespace Infobird\Tool;
 class ConnectMysqli{
     //私有的属性
     private static $dbcon=false;
@@ -54,7 +20,7 @@ class ConnectMysqli{
         $this->user = $config['user'] ? $config['user'] : 'root';
         $this->pass = $config['pass'] ? $config['pass'] : 'root';
         $this->db = $config['db'] ? $config['db'] : 'common';
-        $this->charset=isset($arr['charset']) ? $arr['charset'] : 'utf8';
+        $this->charset=isset($config['charset']) ? $config['charset'] : 'utf8';
 
         //连接数据库
         $this->db_connect();

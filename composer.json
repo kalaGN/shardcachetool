@@ -10,7 +10,9 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "phpunit/phpunit": "4.8.36"
+    },
     "autoload":{
         "psr-4":{
             "Infobird\\Tool\\":"src/Tool"
