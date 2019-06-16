@@ -1,6 +1,6 @@
 # shardcachetool for test
 
-##sync my shard data from mysql to redis
+## sync my shard data from mysql to redis
 
 ## Installation
 
