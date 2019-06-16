@@ -9,6 +9,12 @@
             "email": "wangfei@infobird.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/kalaGn/shardcachetool"
+        }
+    ],
     "minimum-stability": "dev",
     "require": {
         "phpunit/phpunit": "4.8.36"
