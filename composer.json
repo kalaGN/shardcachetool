@@ -1,12 +1,12 @@
 {
     "name": "shardcachetool/shardcachetool",
-    "description": "si my desc",
+    "description": "em...  say?",
     "type": "project",
     "license": "MIT",
     "authors": [
         {
-            "name": "infobird",
-            "email": "wangfei@infobird.com"
+            "name": "afei",
+            "email": "491010750@qq.com"
         }
     ],
     "repositories": [
@@ -16,7 +16,7 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {
+    "require-dev": {
         "phpunit/phpunit": "4.8.36"
     },
     "autoload":{
